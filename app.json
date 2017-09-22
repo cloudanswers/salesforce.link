@@ -1,0 +1,7 @@
+{
+  "name": "salesforce link ",
+  "description": "A simple oauth bouncer to allow for oauth completion within salesforce",
+  "repository": "https://github.com/cloudanswers/salesforce.link",
+  "logo": "https://node-js-sample.herokuapp.com/php.png",
+  "keywords": ["salesforce", "oauth", "bounce", "redirect"]
+}
