@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+## salesforce.link
 
-You can use the [editor on GitHub](https://github.com/cloudanswers/salesforce.link/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Right now the primary reason for this site is a way to bounce a user from a salesforce oauth flow back into salesforce again.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### What is this?
 
-### Markdown
+If you ever tried to setup an oauth flow in salesforce for a managed package, you know you can't do it without relying on an external service to bounce the user back to you.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+If you try to package a named credential OR if you try to tell a user to setup a named credential for your managed app, then you also have to tell them to make a ConnectedApp and an AuthProvider and copy/paste values between all three.  Not an ideal user experience for people installing your app.
 
-```markdown
-Syntax highlighted code block
+Even if you use just oauth, you can't send the use back to this salesforce org because each company has a different domain, and your connected app can't use wildcards for the callback domain.
 
-# Header 1
-## Header 2
-### Header 3
+Here's how it works:
 
-- Bulleted
-- List
+1.  You setup a connected app one time (not for each install of the app)
+2.  You set the callback to https://salesforce.link/bounce
+3.  In your oauth start url, send the user with the `state` value of the page you want them to come back to
 
-1. Numbered
-2. List
+Now, when the user completes the flow, they are sent to `salesforce.link/bounce` which reads the `state` parameter to redirect them to your site.  Now your user will bounce back to the installed salesforce org and let you complete the flow without having to do anything  more like deploying heroku servers to handle this (we've done it too many times).
 
-**Bold** and _Italic_ and `Code` text
+The source for this is on github so you can fork and host it yourself if you wish, or just use our simple domain.
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cloudanswers/salesforce.link/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Questions?  Come visit us at www.cloudanswers.com
