@@ -2,6 +2,9 @@
 
 Right now the primary reason for this site is a way to bounce a user from a salesforce oauth flow back into salesforce again.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+
 ### What is this?
 
 If you ever tried to setup an oauth flow in salesforce for a managed package, you know you can't do it without relying on an external service to bounce the user back to you.
@@ -18,6 +21,8 @@ Here's how it works:
 Now, when the user completes the flow, they are sent to `salesforce.link/bounce` which reads the `state` parameter to redirect them to your site.  Now your user will bounce back to the installed salesforce org and let you complete the flow without having to do anything more like deploying heroku servers to handle this (we've done it too many times).
 
 The source for this is on github at https://github.com/cloudanswers/salesforce.link so you can fork and host it yourself if you wish, or just take the page and put it on your domain.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 Questions?  Come visit us:
 
