@@ -13,7 +13,7 @@ Even if you use just oauth, you can't send the use back to this salesforce org b
 Here's how it works:
 
 1.  You setup a connected app one time (not for each install of the app)
-2.  You set the callback to https://salesforce.link/bounce
+2.  You set the callback to https://cloudanswers.github.io/salesforce.link/bounce
 3.  In your oauth start url, send the user with the `state` value of the page you want them to come back to
 
 Now, when the user completes the flow, they are sent to `salesforce.link/bounce` which reads the `state` parameter to redirect them to your site.  Now your user will bounce back to the installed salesforce org and let you complete the flow without having to do anything  more like deploying heroku servers to handle this (we've done it too many times).
