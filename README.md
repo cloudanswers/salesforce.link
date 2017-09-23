@@ -28,6 +28,12 @@ The source for this is on github at https://github.com/cloudanswers/salesforce.l
 
 It's safe because the "code" value that is present in the redirect url doesn't give you access to anything without the client_id and client_secret (which are in your server).  However, if you have any concerns, just move the single page in the "bounce" folder to your own server.  We included a deploy button for heroku so you can deploy it for free with one click and have total control.  Otherwise, we'll keep this service up for you if you ever need to use the bouncer :)
 
+Also, since you can deploy it to Heroku, and Heroku is owned by salesforce, then this is basically like keeping people on salesforce and their session doesn't even leave salesforce infrastructure.
+
+### Who are you?
+
+"Salesforce.link" is not in any way officially supported or associated with the company Salesforce.  We are a small development shop that primarily works on salesforce apps (our own and on contract).  We are not salesforce, the salesforce.link domain just seemed like a logical name for this.
+
 Questions?  Come visit us:
 
 www.cloudanswers.com
