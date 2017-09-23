@@ -2,7 +2,7 @@
 
 Right now the primary reason for this site is a way to bounce a user from a salesforce oauth flow back into salesforce again.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fcloudanswers%2Fsalesforce.link&template=https%3A%2F%2Fgithub.com%2Fcloudanswers%2Fsalesforce.link)
 
 
 ### What is this?
@@ -22,7 +22,7 @@ Now, when the user completes the flow, they are sent to `salesforce.link/bounce`
 
 The source for this is on github at https://github.com/cloudanswers/salesforce.link so you can fork and host it yourself if you wish, or just take the page and put it on your domain.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fcloudanswers%2Fsalesforce.link&template=https%3A%2F%2Fgithub.com%2Fcloudanswers%2Fsalesforce.link)
 
 ### Is this safe?
 
